@@ -1,23 +1,20 @@
-* {
-	/* margin: 0; */
-	text-align: center;
+html,
+body {
+  height: 100%;
 }
 
-.linguagem {
-	border: 1px solid black;
-	border-radius: 15px;
-	width: 50%;
-	margin: auto;
-	padding: 10px 20px;
-	box-shadow: 10px 10px 5px #ddd;
-	transition: all .1s ease-in-out;
-	margin-top: 20px;
+#page-content {
+  flex: 1 0 auto;
 }
 
-.linguagem:hover {
-	transform: scale(1.02);
+#sticky-footer {
+  flex-shrink: none;
 }
 
-.linguagem p {
-	text-align: justify;
+.carousel {
+	height: 90vh;
+}
+
+.carousel img {
+	max-height: 90vh;
 }

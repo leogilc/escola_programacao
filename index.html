@@ -1,63 +1,199 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <title>Escola</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="css/estilo.css"> -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Hello, world!</title>
 </head>
 
-<body>
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Escola de programação</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <h1>Escola de programação</h1>
-    <div class="conteudo">
-        <div class="linguagem">
-            <img src="img/php-logo.png" alt="" style="width: 80px; height: auto;">
-            <h2>PHP</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus cumque laudantium deleniti dolor
-                totam.
-                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia velit, eligendi
-                soluta
-                quos hic!</p>
-            <a href="#">Saiba sobre</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <button type="button" class="btn btn-success mr-sm-2" data-toggle="modal" data-target="#exampleModal">
+                Se inscrever
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
         </div>
-        <div class="linguagem">
-            <img src="img/java-logo.png" alt="" style="width: 80px; height: auto;">
-            <h2>Java</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus cumque laudantium deleniti dolor
-                totam.
-                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia velit, eligendi
-                soluta
-                quos hic!</p>
-            <a href="#">Saiba sobre</a>
+    </nav>
+    <div id="page-content">
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="nome">Nome</label>
+                                        <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="idade">Idade</label>
+                                        <input type="number" class="form-control" id="idade" min="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Senha</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Gostaria de receber
+                                    novidades</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Ingressar</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="linguagem">
-            <img src="img/javascript-logo.png" alt="" style="width: 80px; height: auto;">
-            <h2>JavaScript</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus cumque laudantium deleniti dolor
-                totam.
-                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia velit, eligendi
-                soluta
-                quos hic!</p>
-            <a href="#">Saiba sobre</a>
-        </div>
-        <div class="linguagem">
-            <img src="img/csharp-logo.png" alt="" style="width: 80px; height: auto;">
-            <h2>C#</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus cumque laudantium deleniti dolor
-                totam.
-                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia velit, eligendi
-                soluta
-                quos hic!</p>
-            <a href="#">Saiba sobre</a>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card shadow-sm">
+                        <img src="img/php-logo.png" class="card-img-top p-3" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">PHP</h2>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+                                cumque
+                                laudantium deleniti dolor
+                                totam.
+                                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia
+                                velit,
+                                eligendi
+                                soluta
+                                quos hic!</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block">Saiba sobre</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card shadow-sm">
+                        <img src="img/java-logo.png" class="card-img-top p-3" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Java</h2>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+                                cumque
+                                laudantium deleniti dolor
+                                totam.
+                                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia
+                                velit,
+                                eligendi
+                                soluta
+                                quos hic!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block">Saiba sobre</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card shadow-sm">
+                        <img src="img/javascript-logo.png" class="card-img-top p-3" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">JavaScript</h2>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+                                cumque
+                                laudantium deleniti dolor
+                                totam.
+                                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia
+                                velit,
+                                eligendi
+                                soluta
+                                quos hic!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block">Saiba sobre</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card shadow-sm">
+                        <img src="img/csharp-logo.png" class="card-img-top p-3" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">C#</h2>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+                                cumque
+                                laudantium deleniti dolor
+                                totam.
+                                Itaque illo quisquam quasi incidunt, molestias laboriosam fugit optio laborum quia
+                                velit,
+                                eligendi
+                                soluta
+                                quos hic!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block">Saiba sobre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        Todos os direitos reservados © <br>
-        Contato no telefone: (11) 1111-1111
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Escola de programação</small>
+        </div>
     </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
